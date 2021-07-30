@@ -82,7 +82,7 @@ with open(args.input, 'Ur') as f:
 			convertstarttime = time.localtime(float(row[4]))
 			convertendtime = time.localtime(float(row[48]))
 			startofcall = str(convertstarttime.tm_year)+"/"+str(convertstarttime.tm_mon)+"/"+str(convertstarttime.tm_mday)+" "+str(convertstarttime.tm_hour) +":"+ str(convertstarttime.tm_min)
-			endofcall = str(convertendtime.tm_year)+"/"+str(convertendtime.tm_mon)+"/"+str(convertendtime.tm_mday)+" "+str((convertendtime.tm_hour+1)) +":"+ str(convertstarttime.tm_min)
+			endofcall = str(convertendtime.tm_year)+"/"+str(convertendtime.tm_mon)+"/"+str(convertendtime.tm_mday)+" "+str((convertendtime.tm_hour)) +":"+ str(convertendtime.tm_min)
 			
 			parsedoutput.write(calldirection+","+startofcall+","+endofcall+","+row[55]+","+row[8]+","+row[29]+","+row[30]+"\n")
 
