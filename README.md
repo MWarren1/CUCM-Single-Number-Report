@@ -1,6 +1,6 @@
 # CUCM-Single-Number-Report
 ###### Dependencies : Python 2.7
-###### By Redemption.Man
+
 a quick a dirty python script that take a cisco CDR file as input and creates a file of all the calls of a single phone number, including incoming or outgoing, duration start and end times
 
 ```
